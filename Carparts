@@ -1,0 +1,19 @@
+
+ㅡ
+Skills
+
+class Seller:
+    def __init__(self):
+        self.cars = []
+
+    def sell(self):
+        if len(self.cars) == 0:
+            raise Exception("Node cars for sale")
+
+
+seller = Seller()
+try:
+    seller.sell()
+except Exception as e:
+    print(e.args[0])
+    # e.args[0] is "Now cars for sale"
